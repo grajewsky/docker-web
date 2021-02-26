@@ -5,7 +5,7 @@ RUN apt-get install -y curl git zip unzip openssh-client sendmail libpng-dev zli
 
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
 RUN apt-get update 
 RUN apt-get install -y --no-install-recommends nodejs
 RUN npm install -g npm
