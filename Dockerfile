@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.4-apache
 
 RUN apt-get update
 RUN apt-get install -y curl git zip unzip openssh-client sendmail libpng-dev zlib1g-dev libxslt-dev
